@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Index</title>
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/menu.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    </head>
+    <body >
+        <!--Menu-->
+        <nav>
+            <ul id="menu">
+                <li id="login" onclick="view_login()">Login</li>
+                <li id="registro" onclick="view_multilink()">Registro</li>
+                <li id="lista" onclick="view_lista_registros()">Buscar</li>
+                <li id="lista" onclick="view_config()">config</li>
+            </ul>
+        </nav>
+        <!--contenido-->
+      <div id="container" class="bg-gray-100 min-h-screen flex items-center justify-center">
+
+
+      </div> 
+
+    </body>
+    <script charset="utf-8">
+        //var uriGlobal ="http://arieltest.ddns.net/supervisores/public/";
+        var uriGlobal ="http://localhost/supervisores/public/";
+    </script>
+    <script src="js/help.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/supervisores/multilink.js"></script>
+    <script src="js/supervisores/registro_super.js"></script>
+    <script src="js/supervisores/vencimiento.js"></script>
+    <script src="js/supervisores/lavados.js"></script>
+    <script src="js/supervisores/stock_silos.js"></script>
+    <script src="js/supervisores/obs_maquinas.js"></script>
+    <script src="js/supervisores/lista_registros.js"></script>
+    <script src="js/supervisores/info_html.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/supervisores/config.js"></script>
+    <script src="js/supervisores/equipos_config.js"></script>
+    <script src="js/supervisores/cambiar_password.js"></script>
+    <script src="js/html2pdf.js/dist/html2pdf.bundle.min.js.map"></script>
+    <script src="js/html2pdf.js/dist/html2pdf.bundle.min.js"></script>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
+    <title>Modal Form with Tailwind CSS</title>
+</head>
+<body class="bg-gray-100">
+    <!-- Modal -->
+    <div id="myModal" class="modal  inset-0 bg-gray-500 bg-opacity-50 justify-center items-center">
+        <div class="bg-white p-8 rounded w-1/2 mt-8 mx-auto">
+            <h2 class="text-xl font-semibold mb-4">Modal Form</h2>
+            <form class="grid grid-cols-2 gap-3">
+                <div class="mb-4">
+                    <label for="idvencimiento" class="block font-medium">ID Vencimiento</label>
+                    <input type="text" id="idvencimiento" name="idvencimientos" class="w-full border-gray-300 rounded-md shadow-sm py-2 px-3">
+                </div>
+
+                <div class="mb-4">
+                    <label for="producto_idproducto" class="block font-medium">Codigo</label>
+                    <select id="producto_idproducto" name="productos_idproductos" class="w-full border-gray-300 rounded-md shadow-sm py-2 px-3">
+                        <!-- Opciones del select de máquina -->
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="vencimiento" class="block font-medium">Vencimiento</label>
+                    <input type="date" id="vencimiento" name="vencimiento" class="w-full border-gray-300 rounded-md shadow-sm py-2 px-3">
+                </div>
+                <div class="mb-4">
+                    <label class="block font-medium">Control</label>
+                    <input type="checkbox" id="control" name="control" class="mr-2">
+                    <label for="control">Control</label>
+                </div>
+                <!-- Otros campos aquí (vda, maquina_idmaquina, registro_idregistro, producto_idproducto) -->
+
+                <div class="mb-4">
+                    <label for="maquina_idmaquina" class="block font-medium">Máquina</label>
+                    <select id="maquina_idmaquina" name="maquinas_idmaquinas" class="w-full border-gray-300 rounded-md shadow-sm py-2 px-3">
+                        <!-- Opciones del select de máquina -->
+                    </select>
+                </div>
+                 
+                <!-- Otros campos y selects aquí -->
+                <div class="mb-4">
+                    <label for="vda" class="block font-medium">ID Vencimiento</label>
+                    <input type="text" id="vda" name="vda" class="w-full border-gray-300 rounded-md shadow-sm py-2 px-3">
+                </div>
+
+                <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">Guardar</button>
+                <button type="submit" class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded">Cancelar</button>
+            </form>
+
+            <!-- Tabla -->
+            <table class="mt-8 w-full">
+                <thead>
+                    <tr>
+                        <th class="px-4 py-2">Código</th>
+                        <th class="px-4 py-2">Máquina</th>
+                        <th class="px-4 py-2">Vencimiento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Filas de la tabla aquí -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+   </body>
+</html>
+
